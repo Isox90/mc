@@ -32,7 +32,7 @@ fi
 				echo "Neither wget or curl were found on your system. Please install one and try again"
          fi
       fi
-java -d64 -jar serverstarter-1.2.7.jar
+java -d64 -Xmx7G -Xms3G -jar serverstarter-1.2.7.jar
 if [[ $DO_RAMDISK -eq 1 ]]; then
     sudo umount $SAVE_DIR
     rm -rf $SAVE_DIR
